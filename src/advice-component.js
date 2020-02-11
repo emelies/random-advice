@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-function AdviceComponent() { 
-    
+function AdviceComponent() {
   const [advice, onChangeAdvice] = useState();
   React.useEffect(() => {
     if (advice) {
@@ -18,8 +17,8 @@ function AdviceComponent() {
   });
 
   return (
-    <div>
-      <div>{advice}</div>
+    <div className="advice-box">
+      <div className="advice-text">{advice}</div>
       {/* <button onClick={}>refresh advice</button> */}
     </div>
   );
